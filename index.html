@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RGBSI Task - Kanagaraj Subramaniam</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jobs Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Applicants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Company</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="search">
+                        <span class="material-symbols-outlined search-icon">
+                            search
+                        </span>
+                        <input class="form-control me-2 search-box" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </div>
+                </form>
+                <span class="material-symbols-outlined notifications">
+                    notifications
+                </span>
+                <span class="avatar">
+                    <img src="assets/images/avatar-3.jpg" alt="image" />
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- Divider -->
+    <section class="container divider">
+        <hr />
+    </section>
+    <!-- Header -->
+    <section class="container header">
+        <div class="row">
+            <div class="col-lg-8">
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Jobs</a></li>
+                        <span class="material-symbols-outlined angle-right">
+                            chevron_right
+                        </span>
+                        <li class="breadcrumb-item active" aria-current="page">Engineering</li>
+                    </ol>
+                </nav>
+                <h3> Back End Developer </h3>
+                <div class="job-info">
+                    <div class="item">
+                        <span class="material-symbols-outlined">
+                            work
+                        </span>
+                        <p> Full-time </p>
+                    </div>
+                    <div class="item">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <p> Remote </p>
+                    </div>
+                    <div class="item">
+                        <span class="material-symbols-outlined">
+                            paid
+                        </span>
+                        <p> $120k - $140k </p>
+                    </div>
+                    <div class="item">
+                        <span class="material-symbols-outlined">
+                            calendar_today
+                        </span>
+                        <p> Closing on January 9, 2020 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 actions">
+                <button type="button" class="btn btn-outline-dark">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                    Edit
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                    <span class="material-symbols-outlined">
+                        open_in_full
+                    </span>
+                    View
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="material-symbols-outlined done">
+                            done
+                        </span>
+                        <p>Published</p>
+                        <div class="vr"></div>
+                        <span class="material-symbols-outlined expand">
+                            expand_more
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action Item #1</a></li>
+                        <li><a class="dropdown-item" href="#">Action Item #2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Details -->
+    <section class="container-fluid details">
+        <div class="container">
+            <h5> Candidates </h5>
+
+
+            <ul class="nav nav-tabs" id="detailsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="applied-tab" data-bs-toggle="tab" data-bs-target="#applied-tab-pane"
+                        type="button" role="tab" aria-controls="applied-tab-pane" aria-selected="true">
+                        Applied
+                        <span class="badge text-bg-secondary">2</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="phone-tab" data-bs-toggle="tab" data-bs-target="#phone-tab-pane"
+                        type="button" role="tab" aria-controls="phone-tab-pane" aria-selected="false">
+                        Phone Screening
+                        <span class="badge text-bg-secondary">4</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="interview-tab" data-bs-toggle="tab"
+                        data-bs-target="#interview-tab-pane" type="button" role="tab" aria-controls="interview-tab-pane"
+                        aria-selected="false">
+                        Interview
+                        <span class="badge text-bg-secondary">6</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="offer-tab" data-bs-toggle="tab" data-bs-target="#offer-tab-pane"
+                        type="button" role="tab" aria-controls="offer-tab-pane" aria-selected="false">Offer</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="disqualified-tab" data-bs-toggle="tab"
+                        data-bs-target="#disqualified-tab-pane" type="button" role="tab"
+                        aria-controls="disqualified-tab-pane" aria-selected="false">Disqualified</button>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="detailsTabContent">
+                <div class="tab-pane fade" id="applied-tab-pane" role="tabpanel" aria-labelledby="applied-tab"
+                    tabindex="0">
+                    <div class="candidates">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-1.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emily Selman </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emily.selman@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-2.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Michael Foster </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        michael.foster@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="phone-tab-pane" role="tabpanel" aria-labelledby="phone-tab" tabindex="0">
+                    <div class="candidates">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-1.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emily Selman </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emily.selman@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-2.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Michael Foster </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        michael.foster@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-1.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emily Selman </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emily.selman@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-2.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Michael Foster </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        michael.foster@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="interview-tab-pane" role="tabpanel"
+                    aria-labelledby="interview-tab" tabindex="0">
+
+                    <div class="candidates">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-1.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emily Selman </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emily.selman@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-2.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Michael Foster </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        michael.foster@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-3.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emma Dorsey </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emma.dorsey@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-4.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Anna Roberts </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        anna.roberts@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-5.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Benjamin Russel </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        benjamin.russel@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-1.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emily Selman </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emily.selman@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-2.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Michael Foster </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        michael.foster@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-3.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emma Dorsey </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emma.dorsey@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-4.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Anna Roberts </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        anna.roberts@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-5.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Benjamin Russel </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        benjamin.russel@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <nav aria-label="Page Navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item previous">
+                                <a class="page-link" href="#">
+                                    <span class="material-symbols-outlined arrow-left">
+                                        west
+                                    </span>
+                                    Previous
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item next">
+                                <a class="page-link" href="#">
+                                    Next
+                                    <span class="material-symbols-outlined arrow-right">
+                                        east
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="tab-pane fade" id="offer-tab-pane" role="tabpanel" aria-labelledby="offer-tab" tabindex="0">
+                    <div class="candidates">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-1.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Emily Selman </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        emily.selman@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="disqualified-tab-pane" role="tabpanel" aria-labelledby="disqualified-tab"
+                    tabindex="0">
+                    <div class="candidates">
+                        <div class="row">
+                            <div class="col">
+                                <img src="assets/images/avatar-5.jpg" class="avatar" alt="image" />
+                                <div class="info">
+                                    <p class="name"> Benjamin Russel </p>
+                                    <p>
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        benjamin.russel@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="info">
+                                    <p class="date"> Applied on January 7, 2020 </p>
+                                    <p>
+                                        <img src="assets/images/ok.svg" alt="image" />
+                                        Completed phone screening
+                                    </p>
+                                </div>
+                                <span class="material-symbols-outlined angle-right">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="assets/js/bootstrap.min.js"> </script>
+    <script src="assets/js/bootstrap.bundle.min.js"> </script>
+</body>
+
+</html>
